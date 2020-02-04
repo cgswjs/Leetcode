@@ -1,6 +1,7 @@
 #Using DFS
 class Solution:
 	def combinationSumDFS(self,candidates,target):
+		candidates.sort()
 		res=[]
 
 		#create a helper DFS function
@@ -17,6 +18,7 @@ class Solution:
 		return res
 
 	def combinationSumDP(self,candidates,target):
+		candidates.sort()
 		#this dp is a 3D matrix
 		#1st dimension: list represents different cases for different total
 		#2nd dimension: dp[s] represents results when total is s
@@ -32,6 +34,7 @@ class Solution:
 		return dp[target]
 
 	def combinationSumBFS(self,candidates,target):
+		candidates.sort()
 		stack=[(0,0,[])]
 		result=[]
 		while stack:
