@@ -31,7 +31,7 @@ class Solution:
 			for s in range(n,target+1):
 				li=[l+[n] for l in dp[s-n]]
 				dp[s]+=li
-		return dp[target]
+		return dp
 
 	def combinationSumBFS(self,candidates,target):
 		candidates.sort()
@@ -49,5 +49,5 @@ class Solution:
 		return result
 
 a=[1,2,3,4,5,6,7,11,20]
-print(Solution().combinationSumDFS(a,18))
-print(Solution().combinationSumDP(a,18))
+# print(Solution().combinationSumDFS(a,18))
+print(Solution().combinationSumDP(a,3))
