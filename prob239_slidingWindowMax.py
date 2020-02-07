@@ -55,7 +55,7 @@ class Solution:
 				return x*-1,idx
 
 
-nums=[1,3,-1,-3,5,3,6,7]
+nums=[1,3,-1,4,5,3,6,7]
 print(Solution().maxSlidingWindow(nums,3))
 print(Solution().maxSlidingWindowQueue(nums,3))
 print(Solution().maxSlidingWindowHeap(nums,3))
